@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('plantilla/cabeza') %>
+</head>
+<body >
+    <div class="container-fluid"> 
+        <header class="cabecera">
+            <%- include('plantilla/titulo') %>
+            <%- include('plantilla/carrucel') %>
+
+        </header>
+        <br>
+        <div class="col contenido"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm"></div>
+                            <form class="form-horizontal" method="post" action="/registro2" enctype="multipart/form-data">
+                                <fieldset   >
+                                    <legend class="text-center header">Registrate</legend>
+                                    
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col" >
+                                            <input id="usuario" name="usuario" type="text" placeholder="Usuario:" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col" >
+                                            <input id="pasword" name="pasword" type="password" placeholder="Pasword:" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col" >
+                                            <input id="nombre" name="nombre" type="text" placeholder="Nombres:" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col">
+                                            <input id="apellido" name="apellido" type="text" placeholder="Apellidos:" class="form-control">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col">
+                                            <input id="foto" name="foto" type="file" alt="foto" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col">
+                                            <input id="correo" name="correo" type="text" placeholder="Correo Electronico:" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">                                            
+                                        </span>
+                                        <div class="col">
+                                            <input id="celular" name="celular" type="text" placeholder="Celular:" class="form-control">
+                                        </div>
+                                    </div> 
+            
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg" >Enviar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+    <%- include('plantilla/pie') %>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
